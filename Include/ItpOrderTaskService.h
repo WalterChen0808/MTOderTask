@@ -1,5 +1,5 @@
 /*
- create by baoquan.chen 2018-01-06
+ create by walterChen 2018-01-06
 */
 
 //========================================================================
@@ -10,9 +10,7 @@
 #ifndef __ItpOrderTaskService_H_INCLUDED__
 #define __ItpOrderTaskService_H_INCLUDED__
 //========================================================================
-//#include "ItpTaskCustomProcessor.h"
-//BEGIN_NAMESPACE(NTpOrderTask)
- namespace NTpOrderTask {
+namespace NTpOrderTask {
 struct __declspec(novtable)  ItpOrderTaskService
 {
 	virtual int RegisterCustomProcessor(ItpTaskCustomProcessor* Processor) = 0;
@@ -29,8 +27,5 @@ struct __declspec(novtable)  ItpOrderTaskService
 
 	virtual void DeleteSelf() = 0;
 };
-
-//END_NAMESPACE(NTpOrderTask)
- }
-
+}
 #endif #__ItpOrderTaskService_H_INCLUDED__
