@@ -1,5 +1,5 @@
 /*
- create by baoquan.chen 2018-01-06
+ create by WalterChen 2018-01-06
 */
 
 //========================================================================
@@ -11,17 +11,11 @@
 #define __ItpTaskCustomProcessor_H_INCLUDED__
 //========================================================================
 #include "ItpTask.h"
-
-//BEGIN_NAMESPACE(NTpOrderTask)
- namespace NTpOrderTask {
-
+namespace NTpOrderTask {
 struct __declspec(novtable)  ItpTaskCustomProcessor
 {
-	virtual int getTaskType() = 0; //×Ô¶¨Òå´¦ÀíÆ÷ÓëÒª´¦ÀíµÄÈÎÎñµÄÈÎÎñÀàĞÍĞèÒªÒ»ÖÂ
-	virtual int processTask(ItpTask* currentTask) = 0;//´¦ÀíÏàÓ¦µÄÈÎÎñ¡£ÔÚÀïÃæĞèÒª×Ô¶¯Ç¿×ª¶ÔÓ¦ÈÎÎñ£¬ÒÔ·½±ã´¦ÀíÆ÷ÄÜ»ñÈ¡ÈÎÎñµÄ±ØÒªÊı¾İ
+	virtual int getTaskType() = 0; //è‡ªå®šä¹‰å¤„ç†å™¨ä¸è¦å¤„ç†çš„ä»»åŠ¡çš„ä»»åŠ¡ç±»å‹éœ€è¦ä¸€è‡´
+	virtual int processTask(ItpTask* currentTask) = 0;//å¤„ç†ç›¸åº”çš„ä»»åŠ¡ã€‚åœ¨é‡Œé¢éœ€è¦è‡ªåŠ¨å¼ºè½¬å¯¹åº”ä»»åŠ¡ï¼Œä»¥æ–¹ä¾¿å¤„ç†å™¨èƒ½è·å–ä»»åŠ¡çš„å¿…è¦æ•°æ®
 };
-
-//END_NAMESPACE(NTpOrderTask)
- }
-
+}
 #endif #__ItpTaskCustomProcessor_H_INCLUDED__
