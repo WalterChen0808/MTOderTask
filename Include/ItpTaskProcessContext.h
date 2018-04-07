@@ -1,6 +1,6 @@
 /*
- create by baoquan.chen 2018-01-06
- Ö´ĞĞÉÏÏÂÎÄ ÉÏÏÂÎÄÓÃÀ´´¦Àí×Ô¶¨Òå´¦ÀíÆ÷ºÍÈÎÎñµÄÆ¥Åä¹æÔò
+ create by WalterChen 2018-01-06
+ æ‰§è¡Œä¸Šä¸‹æ–‡ ä¸Šä¸‹æ–‡ç”¨æ¥å¤„ç†è‡ªå®šä¹‰å¤„ç†å™¨å’Œä»»åŠ¡çš„åŒ¹é…è§„åˆ™
 */
 
 //========================================================================
@@ -11,15 +11,10 @@
 #ifndef __ItpTaskProcessContext_H_INCLUDED__
 #define __ItpTaskProcessContext_H_INCLUDED__
 //========================================================================
-//#include "ItpTask.h"
-//BEGIN_NAMESPACE(NTpOrderTask)
- namespace NTpOrderTask {
+namespace NTpOrderTask {
 struct __declspec(novtable) ItpTaskProcessContext
 {
-	virtual int ProcessTask(ItpTask* currentTask) = 0; //×ª·¢ÈÎÎñµ½¶ÔÓ¦µÄ´¦ÀíÆ÷ÖĞ
+	virtual int ProcessTask(ItpTask* currentTask) = 0; //è½¬å‘ä»»åŠ¡åˆ°å¯¹åº”çš„å¤„ç†å™¨ä¸­
 };
-
-//END_NAMESPACE(NTpOrderTask)
- }
-
+}
 #endif #__ItpTaskProcessContext_H_INCLUDED__
