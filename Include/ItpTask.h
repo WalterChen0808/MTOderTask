@@ -1,5 +1,5 @@
 /*
- create by baoquan.chen 2018-01-06
+ create by WalterChen 2018-01-06
 */
 
 //========================================================================
@@ -10,20 +10,14 @@
 #ifndef __ItpTask_H_INCLUDED__
 #define __ItpTask_H_INCLUDED__
 //========================================================================
-
-//BEGIN_NAMESPACE(NTpOrderTask)
- namespace NTpOrderTask {
-
+namespace NTpOrderTask {
 struct __declspec(novtable) ItpTask
 {
 	virtual int getUserID() = 0;
 
 	virtual int getTaskType() = 0;
 
-	virtual int getTaskValue() = 0; //ÔİÊ±¶¨Î»Ö»ÓĞintÀàĞÍ¡£ÒÔºóÌí¼Ó¶ÔËùÓĞ»ù±¾ÀàĞÍºÍÊı×é¡¢×Ö·û´®µÄÖ§³Ö
+	virtual int getTaskValue() = 0; //æš‚æ—¶å®šä½åªæœ‰intç±»å‹ã€‚ä»¥åæ·»åŠ å¯¹æ‰€æœ‰åŸºæœ¬ç±»å‹å’Œæ•°ç»„ã€å­—ç¬¦ä¸²çš„æ”¯æŒ
 };
-
-//END_NAMESPACE(NTpOrderTask)
- }
-
+}
 #endif #__ItpTask_H_INCLUDED__
